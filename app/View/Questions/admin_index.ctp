@@ -11,7 +11,7 @@
 		</div>
 	</div>
 
-	
+	 
 	<?php echo $this->Session->flash(); ?>
 
 	<div class="search clearfix form-inline">
@@ -21,6 +21,13 @@
 			echo $this->Html->link( '<i class="icon-trash"></i> '.__("Delete", true), '#', array('class' => 'btn btn-small to_action'.( count( $items ) <= 0 ? ' disabled ' : ''), 'rel' => 'delete', 'escape' => false));
 		?>
 		</div>
+		<div class="pull-left btn-group">
+	<?php 
+		echo $this->Html->link("CATEGORIAS",array('controller'=>'Categories','action' => 'index' ), array('class' => 'btn btn-small', 'escape' => false));
+
+	 ?>
+	
+	 </div>
 		<div class="search-main pull-right">
 			<?php echo $this->Form->create('Search', array('url' => array( 'controller' => $controller, 'action' => 'index'), 'inputDefaults' => array('div' => false, 'label' => false, 'class' => 's175 pull-left search-item')) ) ?>
 			<div class="search-query-field pull-right">

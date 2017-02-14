@@ -11,7 +11,7 @@ class CategoriesController extends AppController {
 	}
 
 	public function admin_index() {
-
+		
 		$this->layout = (!$this->params['isAjax']) ? 'admin' : 'ajax';
 		$this->set('title_for_layout', __("Pages", true));
 		
@@ -23,37 +23,43 @@ class CategoriesController extends AppController {
 
 		// elimino filtros
 		if(isset($this->request->params['named']['search']) && $this->request->params['named']['search'] == 'clear-search'){
+			
 			$this->Session->delete('App.Zone.query');
 		}
 
 		// seteo filtros
 		if(isset($this->request->data['Search']['query'])){
+				
 			$this->Session->write('App.Zone.query', $this->request->data['Search']['query']);
 		}
 
 		// aplico filtros
 		$query = $this->Session->read('App.Zone.query');
+
 		if(!empty($query)){
+
 			$this->paginate['conditions']['OR'] = array(
 				'Zone.title LIKE' => '%'.$query.'%'
 			);
 			$this->request->data['Search']['query'] = $query;
 		}
 		
-		$this->paginate['order'] = 'Zone.title';
+		$this->paginate['order'] = 'Category.id';
 		$this->paginate['limit'] = 20;
-
+		
 		$items = $this->paginate();
+	
 		$this->set( 'items', $items );
 		//$items = $this->Page->generateTreeList($this->paginate['conditions'], null, null, '→');
+				
 
 		$this->set('uneditable', array(2,3));
-
 		$this->backUrl = true;
 
 		$this->set('model', $this->modelClass);
 		$this->set('model_url', $this->modelKey);
 		$this->set('controller', $this->request->params['controller']);
+	
 	}
 	
 	public function admin_edit( $id = null ) {

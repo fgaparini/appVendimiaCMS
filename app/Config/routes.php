@@ -29,6 +29,7 @@
 	//Router::connect('/:language/:controller/:action/*',array(),array('language' => '[a-z]{3}'));
 	Router::connect('/admin', array('controller' => 'users', 'action' => 'login'));
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
+	Router::connect('/admin/admin_index', array('controller' => 'users', 'action' => 'admin_index'));
 /**
  * Load all plugin routes.  See the CakePlugin documentation on 
  * how to customize the loading of plugin routes.
