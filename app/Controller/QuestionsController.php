@@ -1,11 +1,11 @@
 <?php
 App::uses('AppController', 'Controller');
-
+App::uses('MyModel', 'Question');
 class QuestionsController extends AppController {
 
 	public $name = 'Questions';
 	public $paginate = array();
-
+public $uses = array('Question');
 	public function beforeFilter() {
 		parent::beforeFilter();
 		$this->Auth->allow(array('get_next', 'get_result'));
@@ -75,7 +75,7 @@ class QuestionsController extends AppController {
 		if ($this->request->is('post')||$this->request->is('put')) {
 
 			// desmarco el registro como temporal
-			$this->request->data['Question']['robinson'] = 0;
+		
 
 			if( $this->Question->save($this->request->data)) {
 			    
@@ -113,6 +113,9 @@ class QuestionsController extends AppController {
 
 	//PUBLIC
 
+	/**
+	 * Traer preguntas por categoria 
+	 */
 	public function get_next(){
 
 		header('Content-Type: application/json');
@@ -124,9 +127,10 @@ class QuestionsController extends AppController {
 			'status' => 0
 			);
 		
-		//pr($this->params);
-
+		
+		
 		$token = (isset( $this->params->query['token']))?$this->params->query['token']:'';
+
 		$cat_id = (isset( $this->params->query['cat_id']))?$this->params->query['cat_id']:'';
 
 		// { "question_id": "23", "question_title": "Vino don pepito?", "question_source": "Diario", "answers": [ { "id":2,"name": "Si"},{ "id":3,"name": "No"}]}
@@ -155,7 +159,7 @@ class QuestionsController extends AppController {
 
 		$this->Question->recursive = 1;
 		$question = $this->Question->find('first', $options);
-
+		//print_r($question);
 		if( $question){
 			
 			$data = array(

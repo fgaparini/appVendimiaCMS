@@ -2111,3 +2111,1372 @@ Stack Trace:
 #1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2017-02-15 01:24:41 Error: [MissingActionException] Action QuestionsController::admin_get_next() could not be found.
+Exception Attributes: array (
+  'controller' => 'QuestionsController',
+  'action' => 'admin_get_next',
+)
+Request URL: /cms/admin/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(QuestionsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-15 01:31:36 Error: Fatal Error (1): Call to undefined function dd() in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 158]
+2017-02-15 01:31:36 Error: [FatalErrorException] Call to undefined function dd()
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 158)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 158, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 158, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 01:33:46 Error: Fatal Error (1): Call to undefined function dd() in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 155]
+2017-02-15 01:33:46 Error: [FatalErrorException] Call to undefined function dd()
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 155)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 155, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 155, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 01:57:48 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'all' at line 1
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('all', Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('all', Array, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(609): DboSource->fetchAll('all', Array, Array)
+#4 C:\xampp\htdocs\cms\lib\Cake\Model\Model.php(800): DboSource->query('all', Array, Object(Question))
+#5 C:\xampp\htdocs\cms\app\Controller\QuestionsController.php(159): Model->__call('all', Array)
+#6 C:\xampp\htdocs\cms\app\Controller\QuestionsController.php(159): Question->all()
+#7 [internal function]: QuestionsController->get_next()
+#8 C:\xampp\htdocs\cms\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(QuestionsController), Array)
+#9 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(QuestionsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-02-15 02:05:16 Error: Fatal Error (1): Class 'Question' not found in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 128]
+2017-02-15 02:05:16 Error: [FatalErrorException] Class 'Question' not found
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Question...', 'C:\\xampp\\htdocs...', 128)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Question...', 'C:\\xampp\\htdocs...', 128, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'Question...', 'C:\\xampp\\htdocs...', 128, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:05:26 Error: Fatal Error (1): Class 'AppModel' not found in [C:\xampp\htdocs\cms\app\Model\Question.php, line 2]
+2017-02-15 02:05:26 Error: [FatalErrorException] Class 'AppModel' not found
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'AppModel...', 'C:\\xampp\\htdocs...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppModel...', 'C:\\xampp\\htdocs...', 2, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'AppModel...', 'C:\\xampp\\htdocs...', 2, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:05:27 Error: Fatal Error (1): Class 'AppModel' not found in [C:\xampp\htdocs\cms\app\Model\Question.php, line 2]
+2017-02-15 02:05:27 Error: [FatalErrorException] Class 'AppModel' not found
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'AppModel...', 'C:\\xampp\\htdocs...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppModel...', 'C:\\xampp\\htdocs...', 2, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'AppModel...', 'C:\\xampp\\htdocs...', 2, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:05:27 Error: Fatal Error (1): Class 'AppModel' not found in [C:\xampp\htdocs\cms\app\Model\Question.php, line 2]
+2017-02-15 02:05:27 Error: [FatalErrorException] Class 'AppModel' not found
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'AppModel...', 'C:\\xampp\\htdocs...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppModel...', 'C:\\xampp\\htdocs...', 2, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'AppModel...', 'C:\\xampp\\htdocs...', 2, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:05:27 Error: Fatal Error (1): Class 'AppModel' not found in [C:\xampp\htdocs\cms\app\Model\Question.php, line 2]
+2017-02-15 02:05:27 Error: [FatalErrorException] Class 'AppModel' not found
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'AppModel...', 'C:\\xampp\\htdocs...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppModel...', 'C:\\xampp\\htdocs...', 2, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'AppModel...', 'C:\\xampp\\htdocs...', 2, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:06:17 Error: Fatal Error (1): Class 'Question' not found in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 128]
+2017-02-15 02:06:17 Error: [FatalErrorException] Class 'Question' not found
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Question...', 'C:\\xampp\\htdocs...', 128)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Question...', 'C:\\xampp\\htdocs...', 128, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'Question...', 'C:\\xampp\\htdocs...', 128, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:06:35 Error: Fatal Error (1): Class 'MyModel' not found in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 128]
+2017-02-15 02:06:35 Error: [FatalErrorException] Class 'MyModel' not found
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'MyModel'...', 'C:\\xampp\\htdocs...', 128)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'MyModel'...', 'C:\\xampp\\htdocs...', 128, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'MyModel'...', 'C:\\xampp\\htdocs...', 128, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:06:36 Error: Fatal Error (1): Class 'MyModel' not found in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 128]
+2017-02-15 02:06:36 Error: [FatalErrorException] Class 'MyModel' not found
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'MyModel'...', 'C:\\xampp\\htdocs...', 128)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'MyModel'...', 'C:\\xampp\\htdocs...', 128, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'MyModel'...', 'C:\\xampp\\htdocs...', 128, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:06:36 Error: Fatal Error (1): Class 'MyModel' not found in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 128]
+2017-02-15 02:06:36 Error: [FatalErrorException] Class 'MyModel' not found
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'MyModel'...', 'C:\\xampp\\htdocs...', 128)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'MyModel'...', 'C:\\xampp\\htdocs...', 128, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Class 'MyModel'...', 'C:\\xampp\\htdocs...', 128, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:07:11 Error: Fatal Error (1): Call to a member function read() on boolean in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 129]
+2017-02-15 02:07:11 Error: [FatalErrorException] Call to a member function read() on boolean
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 129)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 129, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 129, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:07:12 Error: Fatal Error (1): Call to a member function read() on boolean in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 129]
+2017-02-15 02:07:12 Error: [FatalErrorException] Call to a member function read() on boolean
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 129)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 129, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 129, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:08:49 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 130]
+2017-02-15 02:08:49 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 130)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 130, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 130, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:08:55 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 130]
+2017-02-15 02:08:55 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 130)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 130, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 130, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:08:56 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 130]
+2017-02-15 02:08:56 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 130)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 130, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 130, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:11:52 Error: Fatal Error (1): Call to a member function read() on boolean in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 130]
+2017-02-15 02:11:52 Error: [FatalErrorException] Call to a member function read() on boolean
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 130)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 130, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 130, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:17:16 Error: Fatal Error (4): syntax error, unexpected 'utf8_encode' (T_STRING) in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 161]
+2017-02-15 02:17:16 Error: [FatalErrorException] syntax error, unexpected 'utf8_encode' (T_STRING)
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:17:17 Error: Fatal Error (4): syntax error, unexpected 'utf8_encode' (T_STRING) in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 161]
+2017-02-15 02:17:17 Error: [FatalErrorException] syntax error, unexpected 'utf8_encode' (T_STRING)
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:17:23 Error: Fatal Error (4): syntax error, unexpected 'utf8_encode' (T_STRING) in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 161]
+2017-02-15 02:17:23 Error: [FatalErrorException] syntax error, unexpected 'utf8_encode' (T_STRING)
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:17:23 Error: Fatal Error (4): syntax error, unexpected 'utf8_encode' (T_STRING) in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 161]
+2017-02-15 02:17:23 Error: [FatalErrorException] syntax error, unexpected 'utf8_encode' (T_STRING)
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:17:24 Error: Fatal Error (4): syntax error, unexpected 'utf8_encode' (T_STRING) in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 161]
+2017-02-15 02:17:24 Error: [FatalErrorException] syntax error, unexpected 'utf8_encode' (T_STRING)
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:17:24 Error: Fatal Error (4): syntax error, unexpected 'utf8_encode' (T_STRING) in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 161]
+2017-02-15 02:17:24 Error: [FatalErrorException] syntax error, unexpected 'utf8_encode' (T_STRING)
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:17:24 Error: Fatal Error (4): syntax error, unexpected 'utf8_encode' (T_STRING) in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 161]
+2017-02-15 02:17:24 Error: [FatalErrorException] syntax error, unexpected 'utf8_encode' (T_STRING)
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:17:47 Error: Fatal Error (4): syntax error, unexpected 'utf8_encode' (T_STRING) in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 161]
+2017-02-15 02:17:47 Error: [FatalErrorException] syntax error, unexpected 'utf8_encode' (T_STRING)
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:17:48 Error: Fatal Error (4): syntax error, unexpected 'utf8_encode' (T_STRING) in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 161]
+2017-02-15 02:17:48 Error: [FatalErrorException] syntax error, unexpected 'utf8_encode' (T_STRING)
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:17:48 Error: Fatal Error (4): syntax error, unexpected 'utf8_encode' (T_STRING) in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 161]
+2017-02-15 02:17:48 Error: [FatalErrorException] syntax error, unexpected 'utf8_encode' (T_STRING)
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:17:48 Error: Fatal Error (4): syntax error, unexpected 'utf8_encode' (T_STRING) in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 161]
+2017-02-15 02:17:48 Error: [FatalErrorException] syntax error, unexpected 'utf8_encode' (T_STRING)
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:17:48 Error: Fatal Error (4): syntax error, unexpected 'utf8_encode' (T_STRING) in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 161]
+2017-02-15 02:17:48 Error: [FatalErrorException] syntax error, unexpected 'utf8_encode' (T_STRING)
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:17:48 Error: Fatal Error (4): syntax error, unexpected 'utf8_encode' (T_STRING) in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 161]
+2017-02-15 02:17:48 Error: [FatalErrorException] syntax error, unexpected 'utf8_encode' (T_STRING)
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 161, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:18:11 Error: Fatal Error (1): Call to undefined function utf8_encode_deep() in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 161]
+2017-02-15 02:18:11 Error: [FatalErrorException] Call to undefined function utf8_encode_deep()
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 161)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 161, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 161, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:18:12 Error: Fatal Error (1): Call to undefined function utf8_encode_deep() in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 161]
+2017-02-15 02:18:12 Error: [FatalErrorException] Call to undefined function utf8_encode_deep()
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 161)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 161, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 161, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:18:12 Error: Fatal Error (1): Call to undefined function utf8_encode_deep() in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 161]
+2017-02-15 02:18:12 Error: [FatalErrorException] Call to undefined function utf8_encode_deep()
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 161)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 161, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 161, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:18:12 Error: Fatal Error (1): Call to undefined function utf8_encode_deep() in [C:\xampp\htdocs\cms\app\Controller\QuestionsController.php, line 161]
+2017-02-15 02:18:12 Error: [FatalErrorException] Call to undefined function utf8_encode_deep()
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 161)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 161, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 161, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 02:26:27 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= ('1')   ORDER BY RAND() ASC  LIMIT 1' at line 1
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Questio...', Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Questio...', Array, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Questio...', false)
+#4 C:\xampp\htdocs\cms\lib\Cake\Model\Model.php(2902): DboSource->read(Object(Question), Array)
+#5 C:\xampp\htdocs\cms\lib\Cake\Model\Model.php(2874): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\cms\app\Model\AppModel.php(32): Model->find('first', Array)
+#7 C:\xampp\htdocs\cms\app\Controller\QuestionsController.php(160): AppModel->find('first', Array)
+#8 [internal function]: QuestionsController->get_next()
+#9 C:\xampp\htdocs\cms\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(QuestionsController), Array)
+#10 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(QuestionsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-02-15 02:42:37 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= ('1')   ORDER BY RAND() ASC  LIMIT 1' at line 1
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Questio...', Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Questio...', Array, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Questio...', false)
+#4 C:\xampp\htdocs\cms\lib\Cake\Model\Model.php(2902): DboSource->read(Object(Question), Array)
+#5 C:\xampp\htdocs\cms\lib\Cake\Model\Model.php(2874): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\cms\app\Model\AppModel.php(32): Model->find('first', Array)
+#7 C:\xampp\htdocs\cms\app\Controller\QuestionsController.php(160): AppModel->find('first', Array)
+#8 [internal function]: QuestionsController->get_next()
+#9 C:\xampp\htdocs\cms\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(QuestionsController), Array)
+#10 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(QuestionsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-02-15 02:45:58 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= ('1')   ORDER BY RAND() ASC  LIMIT 1' at line 1
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Questio...', Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Questio...', Array, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Questio...', false)
+#4 C:\xampp\htdocs\cms\lib\Cake\Model\Model.php(2902): DboSource->read(Object(Question), Array)
+#5 C:\xampp\htdocs\cms\lib\Cake\Model\Model.php(2874): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\cms\app\Model\AppModel.php(32): Model->find('first', Array)
+#7 C:\xampp\htdocs\cms\app\Controller\QuestionsController.php(160): AppModel->find('first', Array)
+#8 [internal function]: QuestionsController->get_next()
+#9 C:\xampp\htdocs\cms\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(QuestionsController), Array)
+#10 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(QuestionsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-02-15 02:47:35 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= ('1')   ORDER BY RAND() ASC  LIMIT 1' at line 1
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Questio...', Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Questio...', Array, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Questio...', false)
+#4 C:\xampp\htdocs\cms\lib\Cake\Model\Model.php(2902): DboSource->read(Object(Question), Array)
+#5 C:\xampp\htdocs\cms\lib\Cake\Model\Model.php(2874): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\cms\app\Model\AppModel.php(32): Model->find('first', Array)
+#7 C:\xampp\htdocs\cms\app\Controller\QuestionsController.php(160): AppModel->find('first', Array)
+#8 [internal function]: QuestionsController->get_next()
+#9 C:\xampp\htdocs\cms\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(QuestionsController), Array)
+#10 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(QuestionsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-02-15 02:47:59 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= ('1')   ORDER BY RAND() ASC  LIMIT 1' at line 1
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Questio...', Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Questio...', Array, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Questio...', false)
+#4 C:\xampp\htdocs\cms\lib\Cake\Model\Model.php(2902): DboSource->read(Object(Question), Array)
+#5 C:\xampp\htdocs\cms\lib\Cake\Model\Model.php(2874): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\cms\app\Model\AppModel.php(32): Model->find('first', Array)
+#7 C:\xampp\htdocs\cms\app\Controller\QuestionsController.php(160): AppModel->find('first', Array)
+#8 [internal function]: QuestionsController->get_next()
+#9 C:\xampp\htdocs\cms\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(QuestionsController), Array)
+#10 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(QuestionsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-02-15 02:48:39 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= ('1')   ORDER BY RAND() ASC  LIMIT 1' at line 1
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Questio...', Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Questio...', Array, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Questio...', false)
+#4 C:\xampp\htdocs\cms\lib\Cake\Model\Model.php(2902): DboSource->read(Object(Question), Array)
+#5 C:\xampp\htdocs\cms\lib\Cake\Model\Model.php(2874): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\cms\app\Model\AppModel.php(32): Model->find('first', Array)
+#7 C:\xampp\htdocs\cms\app\Controller\QuestionsController.php(160): AppModel->find('first', Array)
+#8 [internal function]: QuestionsController->get_next()
+#9 C:\xampp\htdocs\cms\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(QuestionsController), Array)
+#10 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(QuestionsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-02-15 02:48:53 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '133   ORDER BY RAND() ASC  LIMIT 1' at line 1
+Request URL: /cms/questions/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Questio...', Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Questio...', Array, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Questio...', false)
+#4 C:\xampp\htdocs\cms\lib\Cake\Model\Model.php(2902): DboSource->read(Object(Question), Array)
+#5 C:\xampp\htdocs\cms\lib\Cake\Model\Model.php(2874): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\cms\app\Model\AppModel.php(32): Model->find('first', Array)
+#7 C:\xampp\htdocs\cms\app\Controller\QuestionsController.php(160): AppModel->find('first', Array)
+#8 [internal function]: QuestionsController->get_next()
+#9 C:\xampp\htdocs\cms\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(QuestionsController), Array)
+#10 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(QuestionsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-02-15 03:30:11 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '= ('1')   ORDER BY RAND() ASC  LIMIT 1' at line 1
+Request URL: /cms/questions/get_next?cat_id=10
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(458): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(424): DboSource->_execute('SELECT `Questio...', Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(665): DboSource->execute('SELECT `Questio...', Array, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Model\Datasource\DboSource.php(1077): DboSource->fetchAll('SELECT `Questio...', false)
+#4 C:\xampp\htdocs\cms\lib\Cake\Model\Model.php(2902): DboSource->read(Object(Question), Array)
+#5 C:\xampp\htdocs\cms\lib\Cake\Model\Model.php(2874): Model->_readDataSource('first', Array)
+#6 C:\xampp\htdocs\cms\app\Model\AppModel.php(32): Model->find('first', Array)
+#7 C:\xampp\htdocs\cms\app\Controller\QuestionsController.php(161): AppModel->find('first', Array)
+#8 [internal function]: QuestionsController->get_next()
+#9 C:\xampp\htdocs\cms\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(QuestionsController), Array)
+#10 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(QuestionsController), Object(CakeRequest), Object(CakeResponse))
+#12 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2017-02-15 23:17:54 Error: [MissingControllerException] Controller class QuestionController could not be found.
+Exception Attributes: array (
+  'class' => 'QuestionController',
+  'plugin' => NULL,
+)
+Request URL: /cms/Question/get_netx
+Stack Trace:
+#0 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-02-15 23:18:06 Error: [MissingControllerException] Controller class QuestionController could not be found.
+Exception Attributes: array (
+  'class' => 'QuestionController',
+  'plugin' => NULL,
+)
+Request URL: /cms/Question/get_next
+Stack Trace:
+#0 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-02-15 23:34:39 Error: Fatal Error (1): Call to a member function read() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 86]
+2017-02-15 23:34:39 Error: [FatalErrorException] Call to a member function read() on null
+Request URL: /cms/admin/Categories/edit/9
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 86)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 86, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 86, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-15 23:42:54 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cms/img/thumb_default.gif
+Stack Trace:
+#0 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-02-15 23:42:55 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:06:35 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cms/img/thumb_default.gif
+Stack Trace:
+#0 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-02-16 00:06:35 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:07:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cms/img/thumb_default.gif
+Stack Trace:
+#0 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-02-16 00:07:01 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:07:16 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cms/img/thumb_default.gif
+Stack Trace:
+#0 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-02-16 00:07:16 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:07:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cms/img/thumb_default.gif
+Stack Trace:
+#0 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-02-16 00:07:38 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:07:49 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cms/img/thumb_default.gif
+Stack Trace:
+#0 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-02-16 00:07:49 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:08:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cms/img/thumb_default.gif
+Stack Trace:
+#0 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-02-16 00:08:04 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:08:46 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cms/img/thumb_default.gif
+Stack Trace:
+#0 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-02-16 00:08:47 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:09:00 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cms/img/thumb_default.gif
+Stack Trace:
+#0 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-02-16 00:09:00 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:09:00 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cms/img/thumb_default.gif
+Stack Trace:
+#0 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-02-16 00:09:01 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:09:24 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cms/img/thumb_default.gif
+Stack Trace:
+#0 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-02-16 00:09:24 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:10:55 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:11:03 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:11:11 Error: Fatal Error (1): Call to a member function save() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 81]
+2017-02-16 00:11:11 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /cms/admin/Categories/edit
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:11:53 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:11:56 Error: Fatal Error (1): Call to a member function save() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 81]
+2017-02-16 00:11:56 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /cms/admin/Categories/edit
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:12:05 Error: Fatal Error (1): Call to a member function save() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 81]
+2017-02-16 00:12:05 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /cms/admin/Categories/edit
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:16:36 Error: Fatal Error (1): Call to a member function save() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 81]
+2017-02-16 00:16:36 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /cms/admin/Categories/edit
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:16:38 Error: Fatal Error (1): Call to a member function save() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 81]
+2017-02-16 00:16:38 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /cms/admin/Categories/edit
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:16:42 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:16:54 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:20:11 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:21:00 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:21:50 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:22:05 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:23:26 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:23:27 Error: Fatal Error (1): Call to a member function save() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 81]
+2017-02-16 00:23:27 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /cms/admin/Categories/edit
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:24:25 Error: Fatal Error (1): Call to a member function save() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 81]
+2017-02-16 00:24:25 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /cms/admin/Categories/edit
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:24:28 Error: Fatal Error (1): Call to a member function save() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 81]
+2017-02-16 00:24:28 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /cms/admin/Categories/edit
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:24:30 Error: Fatal Error (1): Call to a member function save() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 81]
+2017-02-16 00:24:30 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /cms/admin/Categories/edit
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:24:38 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:24:41 Error: Fatal Error (1): Call to a member function save() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 81]
+2017-02-16 00:24:41 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /cms/admin/Categories/edit
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:25:54 Error: Fatal Error (1): Call to a member function save() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 81]
+2017-02-16 00:25:54 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /cms/admin/Categories/edit
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:26:32 Error: Fatal Error (1): Call to a member function save() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 81]
+2017-02-16 00:26:32 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /cms/admin/Categories/edit
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:26:33 Error: Fatal Error (1): Call to a member function save() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 81]
+2017-02-16 00:26:33 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /cms/admin/Categories/edit
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:26:39 Error: Fatal Error (1): Call to a member function save() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 81]
+2017-02-16 00:26:39 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /cms/admin/Categories/edit
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:26:40 Error: Fatal Error (1): Call to a member function save() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 81]
+2017-02-16 00:26:40 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /cms/admin/Categories/edit
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:26:40 Error: Fatal Error (1): Call to a member function save() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 81]
+2017-02-16 00:26:40 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /cms/admin/Categories/edit
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:26:40 Error: Fatal Error (1): Call to a member function save() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 81]
+2017-02-16 00:26:40 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /cms/admin/Categories/edit
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:26:41 Error: Fatal Error (1): Call to a member function save() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 81]
+2017-02-16 00:26:41 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /cms/admin/Categories/edit
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:26:51 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:29:06 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:29:08 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:29:38 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 77]
+2017-02-16 00:29:38 Error: [FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /cms/admin/Categories/edit
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 77)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 77, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 77, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:29:51 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:30:08 Error: Fatal Error (1): Call to a member function save() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 81]
+2017-02-16 00:30:08 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /cms/admin/Categories/edit
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:30:24 Error: Fatal Error (1): Call to a member function save() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 81]
+2017-02-16 00:30:24 Error: [FatalErrorException] Call to a member function save() on null
+Request URL: /cms/admin/Categories/edit
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 81, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:30:53 Error: Fatal Error (1): Call to a member function read() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 87]
+2017-02-16 00:30:53 Error: [FatalErrorException] Call to a member function read() on null
+Request URL: /cms/admin/Categories/edit/11
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 87, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 87, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:30:57 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:38:56 Error: Fatal Error (4): syntax error, unexpected '/' in [C:\xampp\htdocs\cms\app\View\Categories\admin_index.ctp, line 35]
+2017-02-16 00:38:56 Error: [FatalErrorException] syntax error, unexpected '/'
+Request URL: /cms/admin/Categories
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 35, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 35, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:39:42 Error: Fatal Error (4): syntax error, unexpected '/' in [C:\xampp\htdocs\cms\app\View\Categories\admin_index.ctp, line 37]
+2017-02-16 00:39:42 Error: [FatalErrorException] syntax error, unexpected '/'
+Request URL: /cms/admin/Categories
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 37, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 37, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:39:43 Error: Fatal Error (4): syntax error, unexpected '/' in [C:\xampp\htdocs\cms\app\View\Categories\admin_index.ctp, line 37]
+2017-02-16 00:39:43 Error: [FatalErrorException] syntax error, unexpected '/'
+Request URL: /cms/admin/Categories
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 37, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 37, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:39:43 Error: Fatal Error (4): syntax error, unexpected '/' in [C:\xampp\htdocs\cms\app\View\Categories\admin_index.ctp, line 37]
+2017-02-16 00:39:43 Error: [FatalErrorException] syntax error, unexpected '/'
+Request URL: /cms/admin/Categories
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 37, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 37, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:39:45 Error: Fatal Error (4): syntax error, unexpected '/' in [C:\xampp\htdocs\cms\app\View\Categories\admin_index.ctp, line 37]
+2017-02-16 00:39:46 Error: [FatalErrorException] syntax error, unexpected '/'
+Request URL: /cms/admin/Categories
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 37, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 37, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:39:55 Error: Fatal Error (4): syntax error, unexpected '"</td><tr>"' (T_CONSTANT_ENCAPSED_STRING) in [C:\xampp\htdocs\cms\app\View\Categories\admin_index.ctp, line 37]
+2017-02-16 00:39:55 Error: [FatalErrorException] syntax error, unexpected '"</td><tr>"' (T_CONSTANT_ENCAPSED_STRING)
+Request URL: /cms/admin/Categories
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 37, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 37, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:39:56 Error: Fatal Error (4): syntax error, unexpected '"</td><tr>"' (T_CONSTANT_ENCAPSED_STRING) in [C:\xampp\htdocs\cms\app\View\Categories\admin_index.ctp, line 37]
+2017-02-16 00:39:56 Error: [FatalErrorException] syntax error, unexpected '"</td><tr>"' (T_CONSTANT_ENCAPSED_STRING)
+Request URL: /cms/admin/Categories
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 37, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 37, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:40:28 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 101]
+2017-02-16 00:40:28 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cms/admin/Categories/delete/11
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 101)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 101, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 101, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:40:48 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 101]
+2017-02-16 00:40:48 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cms/admin/Categories/delete/11
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 101)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 101, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 101, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:41:54 Error: Fatal Error (1): Call to a member function read() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 87]
+2017-02-16 00:41:54 Error: [FatalErrorException] Call to a member function read() on null
+Request URL: /cms/admin/Categories/edit/10
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 87)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 87, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 87, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:41:56 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 102]
+2017-02-16 00:41:56 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cms/admin/Categories/delete/10
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:42:30 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 102]
+2017-02-16 00:42:30 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cms/admin/Categories/delete/11
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:42:56 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 102]
+2017-02-16 00:42:56 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cms/admin/Categories/delete/11
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:42:59 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 102]
+2017-02-16 00:42:59 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cms/admin/Categories/delete/11
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:43:18 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 102]
+2017-02-16 00:43:18 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cms/admin/Categories/delete/11
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:43:20 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 102]
+2017-02-16 00:43:20 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cms/admin/Categories/delete/11
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:43:20 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 102]
+2017-02-16 00:43:20 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cms/admin/Categories/delete/11
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:43:20 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 102]
+2017-02-16 00:43:20 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cms/admin/Categories/delete/11
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:43:21 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 102]
+2017-02-16 00:43:21 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cms/admin/Categories/delete/11
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:43:23 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cms\app\Controller\CategoriesController.php, line 102]
+2017-02-16 00:43:23 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cms/admin/Categories/delete/11
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#2 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 102, Array)
+#3 C:\xampp\htdocs\cms\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2017-02-16 00:46:08 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2017-02-16 00:46:26 Error: [MissingActionException] Action CategoriesController::admin_add() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_add',
+)
+Request URL: /cms/admin/Categories/add
+Stack Trace:
+#0 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cms\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\cms\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

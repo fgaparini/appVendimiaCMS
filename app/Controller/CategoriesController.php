@@ -49,6 +49,7 @@ class CategoriesController extends AppController {
 		
 		$items = $this->paginate();
 	
+	
 		$this->set( 'items', $items );
 		//$items = $this->Page->generateTreeList($this->paginate['conditions'], null, null, '→');
 				
@@ -71,13 +72,13 @@ class CategoriesController extends AppController {
 
 		$this->set('_nav', "zones");
 		$this->set('_nav_sub', (empty($id)) ? "add" : "index");
-
+	
 		if ($this->request->is('post')||$this->request->is('put')) {
-
+				print_r($this->request->data['Question']['title']);
 			// desmarco el registro como temporal
-			//$this->request->data['Page']['robinson'] = 0;
+		//echo $this->request->data['Question']['title'];
 
-			if( $this->Zone->save($this->request->data)) {
+			if( $this->Category->save($this->request->data)) {
 				$this->Session->setFlash('<a class="close" data-dismiss="alert" href="#">×</a> '. __("Data has been saved successfully.", true), 'default', array( 'class' => 'alert alert-success') );
 				$this->admin_back( array('action' => 'index') );
 			}
@@ -94,18 +95,13 @@ class CategoriesController extends AppController {
 		
 	}
 
-	public function admin_delete( $id = false ) {
+	public function admin_delete( $id ) {
 
-		if(!empty($id)){
-			$this->Zone->delete($id);
-		} else {
-			foreach($this->request->data['Index'] as $id){
-				if(!empty($id) && $id != 0 && $id != 'all'){
-					$this->Zone->delete( $id );
-				}
-			}
-		}
 
+	
+			$this->Category->delete($id);
+		
+$this->Session->setFlash('<a class="close" data-dismiss="alert" href="#">×</a> '. __("Data has been saved successfully.", true), 'default', array( 'class' => 'alert alert-success') );
 		$this->admin_back(array('action' => 'index'));
 
 	}
